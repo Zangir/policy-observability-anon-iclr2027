@@ -1,0 +1,24 @@
+{
+  "item_id": "7312eb253dbe914d9805ed5d2476d503f2af490cfc74e8de6dfb438ee9ab5d93",
+  "packet_id": "c5e33a8f8b28f644f20032717f0e2e49",
+  "model": "claude-sonnet",
+  "rendering_sha256": "801f129f94a55c6456fdfadae30548ec23594f1aa3f7e470c3a7a735a5841938",
+  "rendering_arms": [
+    "C"
+  ],
+  "repetition": 0,
+  "source_task": "40",
+  "action_effect": "read",
+  "tool_name": "find_user_id_by_email",
+  "prompt_sha256": "4c1b917d20965a4b3f8ce0db63998cb6a27dd46e815c419fffafaa2130b72dc9",
+  "prompt_bytes": 28126,
+  "started_utc": "2026-09-25T19:16:51.673458+00:00",
+  "transport": "macos_native_claude_cli",
+  "exit_status": 0,
+  "status": "completed",
+  "category": "valid_decision",
+  "decision": "ASK",
+  "parse_mode": "clean",
+  "elapsed_seconds": 10.701157750096172,
+  "finished_utc": "2026-09-25T19:17:02.374681+00:00"
+}

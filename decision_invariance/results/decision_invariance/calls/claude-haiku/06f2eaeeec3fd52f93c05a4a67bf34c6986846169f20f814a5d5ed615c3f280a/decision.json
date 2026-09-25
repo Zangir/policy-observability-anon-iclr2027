@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The proposed action attempts to remove items by passing an empty new_item_ids array, but the policy specifies that pending-order item modification means changing items 'to an available new item of the same product but of different product option' \u2014 describing item replacement, not removal. The tool schema reinforces this by requiring new_item_ids entries to 'match the item id in the same position and be of the same product.' With new_item_ids empty, the call violates the policy's definition of how modify_items works. The policy provides no mechanism for partial item removal from pending orders; the only defined action that changes order contents for pending orders is item replacement via modify, not deletion.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Modify items \u2014 tool schema: Each new item id should match the item id in the same position and be of the same product.",
+    "Generic action rules: Exchange or modify order tools can only be called once per order."
+  ],
+  "message_indices": [
+    11,
+    12
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User was authenticated via email lookup, and the order #W9284598 belongs to this authenticated user with status 'pending', satisfying the precondition for cancellation. The user explicitly confirmed the order id and provided an accepted reason ('ordered by mistake'), and gave clear explicit confirmation to proceed ('Please go ahead and cancel the order with the reason...'). All policy requirements for cancel_pending_order (pending status verified, valid reason, explicit user confirmation) are met.",
+  "policy_references": [
+    "An order can only be cancelled if its status is 'pending', and you should check its status before taking the action.",
+    "The user needs to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake') for cancellation. Other reasons are not acceptable."
+  ],
+  "message_indices": [
+    6,
+    15,
+    17
+  ]
+}

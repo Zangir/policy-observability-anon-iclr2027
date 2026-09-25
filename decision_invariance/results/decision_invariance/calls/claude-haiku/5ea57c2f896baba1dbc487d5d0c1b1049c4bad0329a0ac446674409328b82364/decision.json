@@ -1,0 +1,17 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been properly authenticated via email (isabella.lopez3271@example.com \u2192 isabella_lopez_6490). The policy explicitly permits providing information about orders to authenticated users: 'Once the user has been authenticated, you can provide the user with information about order, product, profile information.' The candidate action is a read-only information retrieval (get_order_details) to answer the user's questions about which payment method was used on their most recent order and whether they can switch to gift card payment. This is not a database-modifying action and requires no user confirmation.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "You can only help one user per conversation (but you can handle multiple requests from the same user)"
+  ],
+  "message_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+}

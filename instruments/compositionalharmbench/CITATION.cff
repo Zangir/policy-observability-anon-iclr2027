@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use CompositionalHarmBench, please cite the accompanying preprint."
+title: "CompositionalHarmBench: Counterfactually Paired Local-Pass Trajectories"
+version: 1.0.0
+date-released: 2026-09-07
+authors:
+  - family-names: "Anonymous"
+  - family-names: "Anonymous"
+    given-names: "Anonymous"
+license: MIT
+type: dataset

@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "User provided email; agent must authenticate identity via find_user_id_by_email before assisting, per policy: 'you have to authenticate the user identity by locating their user id via email... This has to be done even when the user already provides the user id.' This is a read-only lookup, not a database-modifying action, so no confirmation is required.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.",
+    "This has to be done even when the user already provides the user id."
+  ],
+  "message_indices": [
+    3
+  ]
+}

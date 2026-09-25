@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User authenticated via email, order #W4923227 is pending, and the user explicitly confirmed switching payment to the Visa card ending 8902, which is different from the original Mastercard payment method. No gift card is involved so the balance-sufficiency rule doesn't apply. This matches the modify pending order payment procedure exactly.",
+  "policy_references": [
+    "The user can only choose a single payment method different from the original payment method.",
+    "After user confirmation, the order status will be kept as 'pending'."
+  ],
+  "message_indices": [
+    9,
+    10
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user has been properly authenticated via email (emma.kovacs2974@example.com), and their user details confirm that order #W9284598 belongs to them (it appears in their orders list). The policy explicitly permits providing information about the user's own orders. Getting order details is a read-only informational action that does not require explicit user confirmation. No mandatory procedures are missing.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    4,
+    8
+  ]
+}

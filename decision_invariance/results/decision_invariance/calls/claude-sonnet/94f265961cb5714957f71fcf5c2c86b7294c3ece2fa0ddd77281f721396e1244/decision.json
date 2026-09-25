@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The modify_pending_order_items call correctly targets the pending order and refunds via original PayPal method, but the policy requires the agent to remind the customer to confirm they have provided all items before this once-only irreversible action, and explicit confirmation of that completeness. While the agent did ask 'Have you listed all the items you want to change?' in the same turn as presenting the summary, the user's reply 'Let's do it!' is a general go-ahead to the whole package, not an unambiguous confirmation to the completeness question distinct from the action itself. More importantly, the order also contains a Cycling Helmet and Hiking Boots that the user wants to keep, and the tool call only includes item_ids for keyboard, headphones, and office chair with empty new_item_ids \u2014 this is being used as an item removal (partial cancellation), which is not a permitted operation. The modify_pending_order_items tool per policy only supports modifying items to different options of the same product type (same product, different variant), not removing items from an order entirely with no replacement. Removing items outright is not 'modify item options' as described in the Modify Items policy section, and there is no tool/policy path for partial removal of items from a pending order \u2014 only full cancellation or option-for-option exchange is supported. Therefore this candidate action (removing items via empty new_item_ids) is not supported by the policy.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "This action can only be called once, and will change the order status to 'pending (items modifed)'.",
+    "Generally, you can only take action on pending or delivered orders."
+  ],
+  "message_indices": [
+    15,
+    16
+  ]
+}

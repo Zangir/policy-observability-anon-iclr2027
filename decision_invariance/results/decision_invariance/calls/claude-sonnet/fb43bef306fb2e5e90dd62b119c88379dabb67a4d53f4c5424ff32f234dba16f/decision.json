@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating via email or via name+zip code, even if the user already provided an ID. The user could not recall their email, so falling back to name+zip is the explicitly sanctioned alternative authentication path. The candidate call uses the exact name (Noah Patel) and zip (10108) the user just supplied, matching the tool's required parameters. This is a read-only lookup step to authenticate identity, not a database-modifying action, so no confirmation is required before calling it.",
+  "policy_references": [
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code",
+    "By default, find user id by email, and only call this function if the user is not found by email or cannot remember email."
+  ],
+  "message_indices": [
+    3
+  ]
+}

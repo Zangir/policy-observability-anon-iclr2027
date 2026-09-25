@@ -1,0 +1,19 @@
+{
+  "model": "claude-haiku",
+  "n_items": 396,
+  "completed": 366,
+  "failed": 30,
+  "categories": {
+    "valid_decision": 366,
+    "index_out_of_range": 29,
+    "invalid_output": 1
+  },
+  "parse_modes": {
+    "extracted": 366
+  },
+  "decisions": {
+    "ALLOW": 333,
+    "BLOCK": 31,
+    "ASK": 2
+  }
+}

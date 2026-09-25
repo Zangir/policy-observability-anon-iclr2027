@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "Please cite this audit and the original benchmark sources."
+title: "ScaffoldRankBench: Auditing the Scope of Security Rankings"
+type: software
+authors:
+  - name: "Anonymous authors"
+license: MIT

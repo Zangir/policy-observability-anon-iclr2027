@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The candidate call uses modify_pending_order_items to delete three items from the order (new_item_ids=[] while item_ids has 3 entries). Policy only allows modifying items to 'an available new item of the same product but of different product option' \u2014 it does not support removing items from an order outright, and 'cancel' only applies to an entire pending order. There is no procedure in policy for partial item removal/refund from a pending order, so this action is not authorized as specified.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types",
+    "Generally, you can only take action on pending or delivered orders. Exchange or modify order tools can only be called once per order.",
+    "An order can only be cancelled if its status is 'pending'... the total will be refunded"
+  ],
+  "message_indices": [
+    13,
+    14
+  ]
+}

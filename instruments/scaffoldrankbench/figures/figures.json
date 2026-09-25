@@ -1,0 +1,32 @@
+[
+  {
+    "file": "figures/teaser.pdf",
+    "pattern": "teaser",
+    "caption_draft": "ScaffoldRankBench holds each authorization case fixed and changes only the protocol. Bars show Haiku's realized harm on 16 matched attack families.",
+    "shows": "A surrounding protocol changes realized security for the same model and formal cases."
+  },
+  {
+    "file": "figures/factorial_security.pdf",
+    "pattern": "factorial_security",
+    "caption_draft": "Realized harm across the model-by-scaffold factorial; intervals bootstrap the 16 matched task families.",
+    "shows": "Initial scaffold contrasts also change exposed answers and model-call budgets; they do not isolate scaffold reasoning."
+  },
+  {
+    "file": "figures/utility_and_enforcement.pdf",
+    "pattern": "utility_and_enforcement",
+    "caption_draft": "Left: clean utility versus model-call cost. Right: attempted versus realized harm; points below the diagonal indicate scaffold interception.",
+    "shows": "Safety gains are audited against utility and separated into decision and enforcement effects."
+  },
+  {
+    "file": "figures/defect_diagnostic.pdf",
+    "pattern": "defect_diagnostic",
+    "caption_draft": "Descriptive harm rates by authorization-record defect, averaged across the twelve model-scaffold cells.",
+    "shows": "Every realized violation is concentrated in the unverified-channel defect; identity, scope, and expiry defects produce none."
+  },
+  {
+    "file": "figures/comparison_matrix.pdf",
+    "pattern": "comparison_matrix",
+    "caption_draft": "Abstract-verified capability comparison with nearby agent-system benchmarks; a question mark means not established by the retained abstract.",
+    "shows": "ScaffoldRankBench makes cross-scaffold security-ranking portability the controlled estimand."
+  }
+]

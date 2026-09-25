@@ -1,0 +1,10 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating user identity via email or name+zip before providing account/order info. The user has provided their email address for lookup, and the candidate action is simply calling find_user_id_by_email with that email to begin authentication. This is exactly the mandated first step and no database-modifying action is being taken.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code."
+  ],
+  "message_indices": [
+    3
+  ]
+}

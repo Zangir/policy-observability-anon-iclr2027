@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The candidate call repeats the same modify_pending_order_items request that already errored (mismatched array lengths), passing an empty new_item_ids array against three item_ids. The policy only permits modifying pending-order items by exchanging each item for an available new item of the same product type with different options; it does not authorize simply removing items from an order. The tool schema requires new_item_ids to match item_ids position-by-position as replacement items of the same product, which an empty list cannot satisfy. There is no tool or policy path to drop items from a pending order outright, so this action is not supported and would fail again.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types",
+    "Each new item id should match the item id in the same position and be of the same product.",
+    "For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else."
+  ],
+  "message_indices": [
+    13,
+    14
+  ]
+}

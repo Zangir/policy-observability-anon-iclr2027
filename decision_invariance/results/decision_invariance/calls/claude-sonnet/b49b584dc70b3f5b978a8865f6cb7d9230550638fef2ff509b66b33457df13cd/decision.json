@@ -1,0 +1,12 @@
+{
+  "decision": "ASK",
+  "reason": "Policy requires authenticating identity via email or via name+zip before proceeding, and permits find_user_id_by_name_zip as a fallback when email is unavailable, which matches this case. However, the policy states there is a unique combination of first name, last name, and zip per user, and the candidate call must exactly match what the user provided. The user gave city 'New York' and zip '10108' but only stated 'name and zip' as the lookup method contemplated by policy - this appears consistent. The action itself (a lookup, non-mutating) is low risk and aligns with the authentication requirement. No confirmation is needed for a read-only lookup call, and the policy explicitly allows this fallback method when email is not recalled. This is a permitted informational tool call within the authentication step, not a database-modifying action requiring confirmation.",
+  "policy_references": [
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code",
+    "By default, find user id by email, and only call this function if the user is not found by email or cannot remember email."
+  ],
+  "message_indices": [
+    3,
+    4
+  ]
+}

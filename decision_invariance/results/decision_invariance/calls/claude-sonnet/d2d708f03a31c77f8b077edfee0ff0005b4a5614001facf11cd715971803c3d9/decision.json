@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating the user by email or by name+zip before providing any service, even if the user already supplied identifiers. The user could not recall their email and provided first name, last name, and zip code instead. The candidate action calls find_user_id_by_name_zip with exactly these three fields, matching the tool's required parameters and the policy's alternate authentication path. No database-modifying action is being taken yet, so no confirmation step is required at this stage. This is the correct next step per policy.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.",
+    "By default, find user id by email, and only call this function if the user is not found by email or cannot remember email."
+  ],
+  "message_indices": [
+    3,
+    4
+  ]
+}

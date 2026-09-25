@@ -1,0 +1,13 @@
+{
+  "decision": "ASK",
+  "reason": "The user wants to change the digital camera item to a 10x zoom variant within order #W9284598, which is pending. Modify pending order items requires collecting the full, final list of all items the user wants modified before calling the modify tool (policy: 'Be sure that all items to be changed are collected into a list before making the tool call' and 'remember to remind the customer to confirm they have provided all the items they want to modify'), plus a specified payment method for the price difference and explicit confirmation. The candidate action, get_product_details, is a reasonable information-gathering step to find an available 10x zoom item, but before this proceeds to an actual modify_pending_order_items call, the agent still needs the user to confirm this is the only item to change, select a new specific item, and provide a payment method with confirmation. Since the exact candidate here is only a read-only lookup (get_product_details) and not yet the mutating action, it is not itself blocked, but material information (available 10x zoom item, payment method, final confirmation) is still missing before any update action would be permitted.",
+  "policy_references": [
+    "Exchange or modify order tools can only be called once per order. Be sure that all items to be changed are collected into a list before making the tool call!!!",
+    "remember to remind the customer to confirm they have provided all the items they want to modify",
+    "The user must provide a payment method to pay or receive refund of the price difference.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    12
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "question": 8,
+  "locked_at": "2026-09-08T17:15:39.132461+00:00",
+  "study": "review_openai_v1",
+  "models": [
+    "gpt-5.6-luna",
+    "gpt-5.6-sol"
+  ],
+  "repeats": 2,
+  "workers": 3,
+  "timeout_seconds_per_turn": 180,
+  "seed": 202709,
+  "reasoning_effort": "low",
+  "retry_policy": "none; all failed and malformed turns retained; explicit quota circuit breaker stops further scheduling",
+  "reason": "Claude quota incident; full separate design, never replacing selected failed rows. Q6 complete quota-affected and Q7 partial runs preserved; Q8\u2013Q11 had no Claude responses.",
+  "design": "All cases, conditions, prompts, schemas, oracles, scoring and planned contrasts retained from run_review_controls.py; only provider/interface and execution retry policy differ. This plan is local, not externally preregistered.",
+  "scope": "OpenAI CLI configuration, not a pure cross-provider comparison; host skill/policy/environment context remains and is archived with each conversation. No claim of equal hidden compute.",
+  "source_sha256": {
+    "openai_controlled_runner.py": "7ca6d3f5b5a8be215cf0f42553fdea4761768b36b4a11e80ad10e5e21528918a",
+    "controlled_runner.py": "09d31e57171be4020ff1f46dc11a9a73b4b826bce1ed1674847ccd6901c39eb3",
+    "run_review_openai.py": "0c70bd5955a9fc851d52c54a1c1c2928f7c9281925867ce4c49266318069e204",
+    "run_review_controls.py": "dc2510b0ff2a760d8a65761ec89e998b89865754c3c79beb022bb98141b59506"
+  },
+  "offline_validation": {
+    "exit_code": 0,
+    "output": "Validated 96 views against concrete payload execution and separate metadata monitor\n"
+  }
+}

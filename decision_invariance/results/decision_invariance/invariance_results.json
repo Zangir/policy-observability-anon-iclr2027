@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "cohort_manifest_sha256": "96d862380b8ed50aa4e09a715d44efdc7592a9415eeccecca1385441010996bf",
+  "models_analyzed": [
+    "claude-haiku",
+    "claude-sonnet"
+  ],
+  "by_model": {
+    "claude-haiku": {
+      "model": "claude-haiku",
+      "contrasts": {
+        "K-C": {
+          "complete_valid_packets": 52,
+          "cross_disagreement_packet_weighted": 0.028846153846153848,
+          "within_disagreement_packet_weighted": 0.028846153846153848,
+          "excess_disagreement_packet_weighted": 0.0,
+          "excess_disagreement_ci95_item_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "cross_disagreement_task_macro": 0.027777777777777776,
+          "within_disagreement_task_macro": 0.027777777777777776,
+          "excess_disagreement_task_macro": 0.0,
+          "packets_with_any_cross_disagreement": 3,
+          "packets_with_positive_excess": 0
+        },
+        "R-C": {
+          "complete_valid_packets": 49,
+          "cross_disagreement_packet_weighted": 0.02040816326530612,
+          "within_disagreement_packet_weighted": 0.02040816326530612,
+          "excess_disagreement_packet_weighted": 0.0,
+          "excess_disagreement_ci95_item_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "cross_disagreement_task_macro": 0.0196078431372549,
+          "within_disagreement_task_macro": 0.0196078431372549,
+          "excess_disagreement_task_macro": 0.0,
+          "packets_with_any_cross_disagreement": 2,
+          "packets_with_positive_excess": 0
+        }
+      },
+      "decision_distribution_by_arm": {
+        "C": {
+          "ALLOW": 111,
+          "NO_VALID_DECISION": 10,
+          "BLOCK": 11
+        },
+        "K": {
+          "ALLOW": 113,
+          "NO_VALID_DECISION": 9,
+          "BLOCK": 8,
+          "ASK": 2
+        },
+        "R": {
+          "ALLOW": 109,
+          "NO_VALID_DECISION": 11,
+          "BLOCK": 12
+        }
+      },
+      "cell_coverage": {
+        "valid": 366,
+        "invalid": 30
+      }
+    },
+    "claude-sonnet": {
+      "model": "claude-sonnet",
+      "contrasts": {
+        "K-C": {
+          "complete_valid_packets": 50,
+          "cross_disagreement_packet_weighted": 0.305,
+          "within_disagreement_packet_weighted": 0.34,
+          "excess_disagreement_packet_weighted": -0.035,
+          "excess_disagreement_ci95_item_bootstrap": [
+            -0.085,
+            0.02
+          ],
+          "cross_disagreement_task_macro": 0.3133937785640572,
+          "within_disagreement_task_macro": 0.3482603567742887,
+          "excess_disagreement_task_macro": -0.03486657821023146,
+          "packets_with_any_cross_disagreement": 28,
+          "packets_with_positive_excess": 2
+        },
+        "R-C": {
+          "complete_valid_packets": 39,
+          "cross_disagreement_packet_weighted": 0.3333333333333333,
+          "within_disagreement_packet_weighted": 0.38461538461538464,
+          "excess_disagreement_packet_weighted": -0.05128205128205128,
+          "excess_disagreement_ci95_item_bootstrap": [
+            -0.102564,
+            -0.012821
+          ],
+          "cross_disagreement_task_macro": 0.33080808080808083,
+          "within_disagreement_task_macro": 0.3811447811447811,
+          "excess_disagreement_task_macro": -0.05033670033670034,
+          "packets_with_any_cross_disagreement": 26,
+          "packets_with_positive_excess": 0
+        }
+      },
+      "decision_distribution_by_arm": {
+        "C": {
+          "ASK": 20,
+          "ALLOW": 81,
+          "BLOCK": 21,
+          "NO_VALID_DECISION": 10
+        },
+        "K": {
+          "ALLOW": 88,
+          "ASK": 10,
+          "BLOCK": 22,
+          "NO_VALID_DECISION": 12
+        },
+        "R": {
+          "ALLOW": 71,
+          "ASK": 15,
+          "NO_VALID_DECISION": 24,
+          "BLOCK": 22
+        }
+      },
+      "cell_coverage": {
+        "valid": 350,
+        "invalid": 46
+      }
+    }
+  },
+  "interpretation": "Finite-cohort descriptive serialization sensitivity vs repeated-input noise; no population inference, ranking, permission gold, or prevented historical action."
+}

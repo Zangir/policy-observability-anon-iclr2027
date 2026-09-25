@@ -1,0 +1,16 @@
+{
+  "decision": "ALLOW",
+  "reason": "The candidate action is get_order_details, a read-only information lookup. The user has already been authenticated via find_user_id_by_name_zip and get_user_details, confirming user_id noah_patel_6952, whose profile lists order #W1845024 among the orders belonging to this same user. Providing order details for the user's own order to help them identify which one contains the home office items is within the explicitly permitted scope: 'provide information about their own profile, orders, and related products.' This is not a database-updating action (cancel, modify, return, exchange), so no confirmation step is required before this call.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

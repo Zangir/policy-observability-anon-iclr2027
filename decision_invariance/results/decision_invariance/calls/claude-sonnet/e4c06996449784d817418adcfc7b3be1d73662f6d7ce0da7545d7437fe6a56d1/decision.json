@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating identity at conversation start via email or name+zip, even if user already provided a user id. The user supplied their email in response to the agent's request, and the candidate action is exactly the tool call to look up the user id by that email, which is the mandated first step before any other action. No account update or sensitive disclosure occurs at this step.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.",
+    "By default, find user id by email"
+  ],
+  "message_indices": [
+    2,
+    3
+  ]
+}

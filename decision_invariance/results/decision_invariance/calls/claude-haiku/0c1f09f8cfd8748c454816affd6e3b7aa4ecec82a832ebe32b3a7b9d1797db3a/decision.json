@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The policy explicitly requires user authentication by email lookup at the beginning of the conversation before assisting with orders or profile information. The user has provided their email address in response to the agent's request. The proposed action is a mandatory prerequisite step to fulfill the policy requirement: 'At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.'",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    0,
+    3,
+    4
+  ]
+}

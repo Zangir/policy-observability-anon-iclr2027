@@ -1,0 +1,12 @@
+{
+  "decision": "BLOCK",
+  "reason": "The tool call violates the parameter contract demonstrated by the previous error. The modify_pending_order_items tool requires matching counts of item_ids and new_item_ids arrays (the prior identical attempt returned 'The number of items to be exchanged should match'). An empty new_item_ids array with 3 non-empty item_ids will fail. Additionally, the policy states 'For a pending order, each item can be modified to an available new item of the same product but of different product option,' which presupposes replacement with variant items, not removal. The user's request to remove items from a pending order while keeping others is not supported by available tools or the policy framework. This scenario requires human agent assistance.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types",
+    "Exchange or modify order tools can only be called once per order",
+    "You should transfer the user to a human agent if and only if the request cannot be handled within the scope of your actions"
+  ],
+  "message_indices": [
+    8
+  ]
+}

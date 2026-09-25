@@ -1,0 +1,13 @@
+{
+  "decision": "ASK",
+  "reason": "The proposed action attempts to remove specific items from a pending order by calling modify_pending_order_items with empty new_item_ids. However, the policy states that items can be 'modified to an available new item of the same product but of different product option' \u2014 requiring each old item to map to a new item of the same product type. Removing items entirely (new_item_ids empty) is not modification to a different variant; it is item removal. The policy does not explicitly permit partial order modification (keeping some items while removing others from a pending order). The available actions are: cancel entire order, modify payment method, modify items to different options, or modify address. The tool contract also requires parallel arrays with 1:1 correspondence between item_ids and new_item_ids. This operation falls outside the scope of documented modify_pending_order_items use or requires clarification of whether the backend interprets empty new_item_ids as removal.",
+  "policy_references": [
+    "Modify items: 'For a pending order, each item can be modified to an available new item of the same product but of different product option.'",
+    "Generic action rules: 'For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.'",
+    "Tool parameter: 'Each new item id should match the item id in the same position and be of the same product.'"
+  ],
+  "message_indices": [
+    6,
+    9
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "Policy allows only three actions on a pending order: full cancellation, address modification, payment-method modification, or item modification where each item is swapped to a different option of the SAME product type via matched item_ids/new_item_ids lists. There is no supported action to simply remove items from a pending order while keeping others. The candidate call invokes modify_pending_order_items with item_ids of 3 entries and an empty new_item_ids list, which is not a valid same-product swap and does not match the tool's required semantics (each new item id must match the item id in the same position and be of the same product). This misuses the modify-items tool to perform an unsupported partial-cancellation/removal action, which the policy does not authorize.",
+  "policy_references": [
+    "For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.",
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.",
+    "Each new item id should match the item id in the same position and be of the same product. (tool schema for modify_pending_order_items)"
+  ],
+  "message_indices": [
+    16,
+    17
+  ]
+}

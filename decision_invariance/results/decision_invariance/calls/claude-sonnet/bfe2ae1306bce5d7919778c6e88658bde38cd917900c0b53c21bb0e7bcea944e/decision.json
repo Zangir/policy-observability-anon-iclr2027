@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User authenticated via email lookup, matching an order id (#W9284598) present in the retrieved user's order list. The candidate action is a read-only get_order_details call to check specs/status, which the policy explicitly permits ('provide the user with information about order... help the user look up order id'). No database-modifying action is being taken, so no confirmation is required at this step.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    5,
+    7
+  ]
+}

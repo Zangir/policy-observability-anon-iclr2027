@@ -1,0 +1,10 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy requires: 'Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed.' The candidate tool call skips a mandatory step. The assistant has not yet sent a message listing the action details (the new default address) or asking for explicit confirmation. While the user has stated their intent ('could you update my default address to the one I used for this order?'), this is a request, not explicit confirmation after details have been listed. The established pattern in this conversation (e.g., when modifying order items) shows the proper workflow: (1) agent lists details, (2) user explicitly confirms with 'yes', (3) agent makes tool call. The assistant must first send a message confirming the address change to '517 Lakeview Drive, Suite 183, Seattle, WA 98195' and ask 'Please confirm (yes) to proceed' before making the tool call.",
+  "policy_references": [
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    20
+  ]
+}

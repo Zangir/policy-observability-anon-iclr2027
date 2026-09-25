@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scaffold-rank-bench"
+version = "1.0.0"
+description = "Auditing security-ranking portability across equivalent agent loops"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["scaffold_rank_bench*"]

@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User was authenticated via email lookup returning user id emma_kovacs_9839, satisfying the policy's authentication requirement. The candidate action get_user_details is a read-only information lookup about the authenticated user's own profile/orders, which the policy explicitly permits ('you can provide the user with information about order, product, profile information'). It is not a database-updating action (cancel, modify, return, exchange), so no confirmation is required.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code"
+  ],
+  "message_indices": [
+    3,
+    4,
+    5
+  ]
+}

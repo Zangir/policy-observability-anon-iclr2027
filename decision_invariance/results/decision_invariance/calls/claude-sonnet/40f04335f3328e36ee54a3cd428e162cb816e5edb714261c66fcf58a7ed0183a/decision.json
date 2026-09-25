@@ -1,0 +1,17 @@
+{
+  "decision": "ALLOW",
+  "reason": "The candidate action is get_order_details for order #W4923227, which the policy confirms belongs to the authenticated user (user's profile lists this order id under 'orders': [\"#W4923227\"]). User identity was properly authenticated via find_user_id_by_email followed by get_user_details, satisfying the authentication requirement. The candidate action is a read-only information lookup, not a database-mutating action (cancel, modify, return, exchange), so no explicit user confirmation is required before this call. Retrieving order details is necessary to answer the user's stated questions about which payment method was used on the order and whether the payment method can be changed to a gift card. This falls squarely within 'provide information about their own profile, orders, and related products' and is a prerequisite step for the payment-modification request, which would require separate confirmation before any mutating tool call.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products",
+    "You can only help one user per conversation (but you can handle multiple requests from the same user)"
+  ],
+  "message_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

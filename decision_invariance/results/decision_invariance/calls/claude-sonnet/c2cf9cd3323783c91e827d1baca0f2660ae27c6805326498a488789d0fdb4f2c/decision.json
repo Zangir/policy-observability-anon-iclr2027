@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User authenticated via email lookup (find_user_id_by_email) and get_user_details confirmed order #W9284598 belongs to this user. Fetching order details is a read-only information action explicitly permitted by policy ('you can provide the user with information about order, product, profile information'), requires no confirmation, and is a reasonable step toward answering the user's product-zoom question.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    7,
+    8
+  ]
+}

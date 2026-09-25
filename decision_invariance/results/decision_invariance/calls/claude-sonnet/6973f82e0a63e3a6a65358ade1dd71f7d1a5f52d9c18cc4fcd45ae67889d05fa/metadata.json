@@ -1,0 +1,22 @@
+{
+  "item_id": "6973f82e0a63e3a6a65358ade1dd71f7d1a5f52d9c18cc4fcd45ae67889d05fa",
+  "packet_id": "bf2b8e3b68179ec996bf6befb747dc86",
+  "model": "claude-sonnet",
+  "rendering_sha256": "10db9bdb9ae88d1185d0d30aa5b1baec1b2726f81d5929ba7e40ab693f826f73",
+  "rendering_arms": [
+    "K"
+  ],
+  "repetition": 0,
+  "source_task": "33",
+  "action_effect": "read",
+  "tool_name": "calculate",
+  "prompt_sha256": "af2b35ab1c37e8d5667b3fa8d7936a3f66cfe2efc65ccb28c6c5cdd1982f895e",
+  "prompt_bytes": 32558,
+  "started_utc": "2026-09-25T19:24:34.850807+00:00",
+  "transport": "macos_native_claude_cli",
+  "exit_status": 0,
+  "status": "failed",
+  "category": "invalid_output",
+  "elapsed_seconds": 8.39024620805867,
+  "finished_utc": "2026-09-25T19:24:43.241106+00:00"
+}

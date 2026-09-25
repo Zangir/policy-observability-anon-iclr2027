@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated, and the request is to look up whether a 10x zoom camera variant exists as a same-product-type replacement for a pending order item. Fetching get_product_details for the camera's product_id is a read-only information lookup, explicitly permitted ('provide the user with information about order, product, profile information') and necessary to determine if a valid exchange item exists before any modify action or confirmation is proposed. No database-mutating tool is being called, so no confirmation is required at this step.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    8,
+    9
+  ]
+}

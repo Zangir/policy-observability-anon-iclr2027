@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user (Noah Patel) has been properly authenticated via name and zip code lookup. The proposed action is a get_order_details call for one of the authenticated user's own orders, which falls squarely within the policy's explicit permission: 'Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.' This is a read-only information request, not a database-modifying action, so explicit user confirmation is not required. The tool call is being made alone without simultaneous messaging, complying with the 'at most one tool call at a time' requirement.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "You can only help one user per conversation"
+  ],
+  "message_indices": [
+    8
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "ASK",
+  "reason": "The user's last message is ambiguous: they ask whether the $60 gift card can be combined with the Visa (split payment across two methods), and only conditionally say to switch fully to Visa 'if not.' The policy requires the user to choose a single payment method different from the original, and split payment across two methods is not supported by modify_pending_order_payment. The agent must first answer the split-payment question and obtain an unambiguous, direct confirmation that payment should be changed solely to the Visa before calling modify_pending_order_payment, rather than inferring consent from a conditional, hedged statement.",
+  "policy_references": [
+    "The user can only choose a single payment method different from the original payment method.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    9
+  ]
+}

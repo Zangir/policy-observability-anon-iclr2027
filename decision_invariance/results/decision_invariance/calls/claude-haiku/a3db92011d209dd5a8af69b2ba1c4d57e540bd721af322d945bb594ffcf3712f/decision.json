@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (email verified, user_id resolved). The proposed action calls get_order_details to retrieve information about the user's order #W4923227. Policy explicitly permits providing 'information about order' to authenticated users. This is a read-only lookup needed to answer the user's question about which payment method was used and to verify order status before any modification attempt. No database update occurs, so explicit confirmation is not required at this retrieval stage.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "Generally, you can only take action on pending or delivered orders."
+  ],
+  "message_indices": [
+    2,
+    4
+  ]
+}

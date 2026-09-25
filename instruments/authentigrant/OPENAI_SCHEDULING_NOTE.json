@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-08T17:36:31.455574+00:00",
+  "paused_parent_pid": 50754,
+  "existing_q6_child_pid": 50756,
+  "parallel_collections": 2,
+  "per_collection_workers": 3,
+  "account_maximum": 6,
+  "scope": "Scheduling change only; no prompt, model, case, seed, repeats, timeout, retry, scoring or immutable manifest changes. Q6 already has outputs; load is shared across separate studies from this timestamp."
+}

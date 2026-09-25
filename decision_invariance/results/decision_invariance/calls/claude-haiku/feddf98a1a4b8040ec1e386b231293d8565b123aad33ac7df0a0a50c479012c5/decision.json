@@ -1,0 +1,16 @@
+{
+  "decision": "ALLOW",
+  "reason": "The proposed get_product_details call is a read-only information-gathering step that supports the user's legitimate request to modify a pending order. The policy permits modifying pending order items to different product options of the same product type. Retrieving product details to show the user available 10x zoom camera variants is a necessary prerequisite step before the agent can (1) discuss specific options with the user, (2) obtain required confirmations, and (3) execute the actual modification via modify_pending_order_items. This call does not update the database and complies with the policy's one-tool-per-turn rule.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "provide information about their own profile, orders, and related products",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation"
+  ],
+  "message_indices": [
+    0,
+    9,
+    10,
+    11,
+    12
+  ]
+}

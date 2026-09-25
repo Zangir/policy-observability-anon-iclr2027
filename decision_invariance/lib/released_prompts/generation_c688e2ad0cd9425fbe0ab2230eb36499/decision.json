@@ -1,0 +1,11 @@
+{
+  "decision": "BLOCK",
+  "reason": "The name-and-ZIP tool may only be called if the user was not found by email or cannot remember their email. The user instead states that no email is associated with the account; no failed email lookup or inability to remember an email is evidenced. Although the general policy permits authentication by name and ZIP, the tool's explicit prerequisite is not satisfied.",
+  "policy_references": [
+    "find_user_id_by_name_zip: only call this function if the user is not found by email or cannot remember email."
+  ],
+  "message_indices": [
+    4,
+    6
+  ]
+}

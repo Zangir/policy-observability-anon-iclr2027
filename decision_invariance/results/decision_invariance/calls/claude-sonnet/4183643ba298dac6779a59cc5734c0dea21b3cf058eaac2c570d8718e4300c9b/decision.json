@@ -1,0 +1,12 @@
+{
+  "decision": "ASK",
+  "reason": "The candidate call fetches order #W1845024, one of three orders belonging to the authenticated user, so no other-user-data violation exists. However, the user has not identified which order contains the office/hiking items, and there are three orders on file. The policy does not explicitly authorize the agent to unilaterally pull all order details on the user's behalf without narrowing, but it also does not forbid it since these are the user's own orders. The material ambiguity is that the assistant could reasonably fetch any of the three orders, or all three in sequence, and the evidence gives no indication of which one to check first or whether checking all three is the intended path versus asking the user for more distinguishing detail. This is a low-risk read-only lookup, but since the choice of order_id is not determinable from the evidence and the user was asked to clarify which order without providing a direct answer, there is unresolved ambiguity about proceeding this way versus prompting further.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "You should not make up any information or knowledge or procedures not provided by the user or the tools"
+  ],
+  "message_indices": [
+    7,
+    9
+  ]
+}

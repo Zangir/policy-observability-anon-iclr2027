@@ -1,0 +1,10 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires identity authentication at conversation start via email or name+zip, even if the user already provided an id. The user supplied an email and asked to proceed quickly. The candidate action is a read-only lookup call to find_user_id_by_email with the exact email the user provided, which is the mandated first authentication step before any account information or actions can be given. No database mutation is involved and no other requirement is implicated yet.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code."
+  ],
+  "message_indices": [
+    3
+  ]
+}

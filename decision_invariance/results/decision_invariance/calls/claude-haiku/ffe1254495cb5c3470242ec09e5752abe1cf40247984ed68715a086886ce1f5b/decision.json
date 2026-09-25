@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been authenticated via name + zip code (message index 9). User explicitly requested order details to identify which order contains both home office and hiking items (message index 11). The policy permits providing order information to authenticated users. This is a read-only retrieval operation, not a database-updating action. The candidate makes one tool call with no accompanying response, complying with the one-tool-at-a-time requirement.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "You should at most make one tool call at a time, and if you take a tool call, you should not respond to the user at the same time"
+  ],
+  "message_indices": [
+    9,
+    11
+  ]
+}

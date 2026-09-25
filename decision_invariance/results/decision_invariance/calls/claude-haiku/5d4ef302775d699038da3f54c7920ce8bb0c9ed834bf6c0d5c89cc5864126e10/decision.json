@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The authenticated user (isabella_lopez_6490) is requesting information about their own order #W4923227. The policy explicitly permits providing information about orders to authenticated users: 'Once the user has been authenticated, you can provide the user with information about order, product, profile information.' Getting order details is a necessary informational step to answer the user's question about which payment method was used and to check order status before any potential payment modification. No database updates are being requested at this stage.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    4,
+    8
+  ]
+}

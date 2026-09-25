@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating user identity via email or name+zip before proceeding, even if user id is already provided. The user supplied an email address in direct response to the agent's request for authentication. Calling find_user_id_by_email with that exact email is the mandated first step of the authentication procedure and does not update any database records.",
+  "policy_references": [
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id."
+  ],
+  "message_indices": [
+    3,
+    4
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (email lookup succeeded). Order #W4923227 is pending, so payment modification is permitted. User provided a single payment method (Visa credit_card_8897086) different from the original (Mastercard credit_card_8554680), satisfying the single-different-method requirement; no gift card balance check is needed since target is a credit card. The agent listed the action details and obtained explicit 'yes' confirmation from the user in the prior turn before making this call.",
+  "policy_references": [
+    "For a pending order, you can take actions to modify its shipping address, payment method, or product item options",
+    "The user can only choose a single payment method different from the original payment method",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed"
+  ],
+  "message_indices": [
+    10,
+    11
+  ]
+}

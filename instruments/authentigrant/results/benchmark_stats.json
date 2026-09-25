@@ -1,0 +1,10 @@
+{
+  "artifact": "AuthentiGrant",
+  "base_tasks": 10,
+  "domains": 5,
+  "factor_count": 5,
+  "factorial_cells_per_task": 32,
+  "full_rows": 320,
+  "oracle_authorized_rows": 40,
+  "version": "1.0.0"
+}

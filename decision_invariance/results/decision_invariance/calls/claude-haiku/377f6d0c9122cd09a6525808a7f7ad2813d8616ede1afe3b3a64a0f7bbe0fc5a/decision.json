@@ -1,0 +1,14 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy authorizes modifying pending order items 'to an available new item of the same product but of different product option.' The proposed action provides empty new_item_ids, meaning no new items replace the removed items. Removal of specific items from a pending order is not the same as modifying items to different product options. The policy strictly defines 'Modify items' as changing items within their product type's options, not removing items entirely. The 'Cancel pending order' policy covers full-order cancellation but not partial item removal. Item removal requires explicit policy authorization not present here.",
+  "policy_references": [
+    "For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.",
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Generic action rules: Exchange or modify order tools can only be called once per order."
+  ],
+  "message_indices": [
+    14,
+    15,
+    16
+  ]
+}

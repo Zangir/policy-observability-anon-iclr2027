@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated via email lookup, and the order (#W4923227) is pending, satisfying the status precondition for a payment modification. The user requested switching payment to a Visa credit card different from the original Mastercard used, satisfying the 'single payment method different from original' requirement. No gift-card balance concern applies since the target is a credit card, not a gift card. The agent listed the action details (order id, new payment method) and the user gave explicit confirmation ('please go ahead ... yes' equivalent affirmative). All policy preconditions for modify_pending_order_payment are met: authentication done, order status pending, new payment method valid and different, explicit user confirmation obtained.",
+  "policy_references": [
+    "An order can only be modified if its status is 'pending'",
+    "The user can only choose a single payment method different from the original payment method.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    9,
+    10
+  ]
+}

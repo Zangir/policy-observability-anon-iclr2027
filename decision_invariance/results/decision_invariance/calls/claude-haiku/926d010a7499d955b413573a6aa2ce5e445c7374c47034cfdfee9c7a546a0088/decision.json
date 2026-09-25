@@ -1,0 +1,10 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy mandates listing action details and obtaining explicit user confirmation before any database-updating action. The user has requested an address update (message 22) but the agent has not yet listed the current vs. new address details or obtained explicit yes/no confirmation. The mandatory preliminary dialogue step must occur before the tool call is permitted.",
+  "policy_references": [
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    22
+  ]
+}

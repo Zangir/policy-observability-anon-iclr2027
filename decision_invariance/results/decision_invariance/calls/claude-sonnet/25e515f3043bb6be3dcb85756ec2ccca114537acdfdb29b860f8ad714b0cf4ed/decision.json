@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (found via email match, matching the sole order on file #W4923227). Retrieving order details is a read-only information lookup permitted under the policy's authenticated-user information provision, and is a necessary step before any potential payment-method modification. No database update occurs.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id."
+  ],
+  "message_indices": [
+    2,
+    4,
+    6
+  ]
+}

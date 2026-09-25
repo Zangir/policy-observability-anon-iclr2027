@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "Modifying items on a pending order requires the user to provide a payment method to pay or receive refund of any price difference; the removed items are not being replaced with new items of equal value, so this is effectively a partial-item removal via the modify-items tool, not a same-type swap. The policy's modify-items procedure is defined only for exchanging items for different options of the same product (with new_item_ids populated), not for dropping items outright while keeping the order pending. Here new_item_ids is empty, meaning items are being deleted rather than swapped, which is not a supported modify-items operation under the policy. Additionally, the policy states modify-items can only be called once and irreversibly locks the order, so before calling it the agent must be certain this is the correct tool; using it to remove items without replacement is an unsupported use of modify_pending_order_items as described.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "The user must provide a payment method to pay or receive refund of the price difference.",
+    "This action can only be called once, and will change the order status to 'pending (items modifed)'."
+  ],
+  "message_indices": [
+    16,
+    17
+  ]
+}

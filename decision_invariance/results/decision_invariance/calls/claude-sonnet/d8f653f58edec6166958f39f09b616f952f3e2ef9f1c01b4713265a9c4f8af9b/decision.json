@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User Noah Patel was authenticated via find_user_id_by_name_zip, and get_user_details confirmed order #W6111398 belongs to him. He cannot recall which order contains the office/hiking items and asked the agent to pull up order details to identify it. get_order_details is a read-only information lookup, explicitly permitted under 'you can provide the user with information about order, product, profile information' and does not update the database, so no confirmation is required before calling it.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    7,
+    9
+  ]
+}

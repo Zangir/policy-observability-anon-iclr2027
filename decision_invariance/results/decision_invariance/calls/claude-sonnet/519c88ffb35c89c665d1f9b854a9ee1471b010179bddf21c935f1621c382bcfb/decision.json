@@ -1,0 +1,14 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating the user by locating their user id via email or name+zip before providing account info. The agent already collected the user's email, called find_user_id_by_email, and received the user_id 'isabella_lopez_6490'. The candidate action calls get_user_details with that same user_id to retrieve profile/order info needed to answer the user's gift card balance and payment method questions, which falls under 'provide information about their own profile, orders, and related products.' This is a read-only lookup, not a database-updating action, so no explicit confirmation is required first.",
+  "policy_references": [
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code",
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information"
+  ],
+  "message_indices": [
+    3,
+    4,
+    5,
+    6
+  ]
+}

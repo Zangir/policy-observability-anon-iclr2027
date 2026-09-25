@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user has been properly authenticated. The order #W4923227 is in 'pending' status, which allows modification. The agent provided action details and obtained explicit user confirmation (message index 7: 'please go ahead and switch the payment method to my Visa'). The payment method change is from Mastercard (credit_card_8554680) to Visa (credit_card_8897086), which satisfies the requirement to use a different payment method. All conditions in the 'Modify payment' policy section are met.",
+  "policy_references": [
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed.",
+    "## Modify pending order - An order can only be modified if its status is 'pending'",
+    "### Modify payment - The user can only choose a single payment method different from the original payment method."
+  ],
+  "message_indices": [
+    6,
+    7
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy allows cancelling only the full pending order or modifying item options to a different variant of the same product (each removed item must be replaced with a new item id of the same product type). There is no policy-supported action for removing/canceling only a subset of items from a pending order while keeping the rest. The candidate call to modify_pending_order_items with item_ids for the three items but an empty new_item_ids list does not fit this tool's contract (positions must match with same-product replacement items) and is being used to simulate a partial cancellation/removal that the policy does not define. The entire conversation confirmed a 'partial cancellation' of specific items from order #W1845024, but the only documented cancellation action applies to the whole order, and modify_pending_order_items cannot delete items without valid replacement items of the same product type.",
+  "policy_references": [
+    "An order can only be cancelled if its status is 'pending'... After user confirmation, the order status will be changed to 'cancelled'",
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Each new item id should match the item id in the same position and be of the same product."
+  ],
+  "message_indices": [
+    16,
+    17,
+    18
+  ]
+}

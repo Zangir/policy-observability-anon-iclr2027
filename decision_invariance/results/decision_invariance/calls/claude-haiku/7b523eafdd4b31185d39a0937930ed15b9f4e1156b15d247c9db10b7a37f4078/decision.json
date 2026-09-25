@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been properly authenticated via name and zip code (message indices 3-5). The proposed action retrieves order details for order #W7043598, which is confirmed to belong to the authenticated user in the get_user_details response. The policy explicitly permits providing information about the user's own orders once authentication is complete. This is a read-only information lookup with no database-modifying prerequisites or restrictions.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code."
+  ],
+  "message_indices": [
+    3,
+    4,
+    5
+  ]
+}

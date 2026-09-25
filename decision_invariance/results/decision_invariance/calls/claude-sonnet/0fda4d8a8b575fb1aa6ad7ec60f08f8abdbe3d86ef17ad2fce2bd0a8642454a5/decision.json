@@ -1,0 +1,12 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy's modify-items action only allows swapping an item for a different option of the same product type ('each item can be modified to an available new item of the same product but of different product option'); it does not support removing items from an order without replacement. The candidate call passes new_item_ids as an empty list while item_ids has three entries, which is a partial cancellation/removal, not a same-product option swap. This has no basis in the policy or tool contract (which requires each new item id to match the item id in the same position and be of the same product), so it cannot be executed as specified.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.",
+    "Each new item id should match the item id in the same position and be of the same product."
+  ],
+  "message_indices": [
+    13,
+    14
+  ]
+}

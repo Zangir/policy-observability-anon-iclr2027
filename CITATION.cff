@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use AuthentiGrant, please cite the pending preprint."
+title: "AuthentiGrant: Factorizing Genuine Authority in Tool-Using Agents"
+type: software
+authors:
+  - family-names: Anonymous
+    given-names: Anonymous
+year: 2026
+license: MIT
+version: 1.0.0

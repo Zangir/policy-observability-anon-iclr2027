@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user is authenticated (found via name+zip, matching profile confirmed) and requested help identifying which of their own orders contains home office vs. hiking items so they can decide on a return/cancellation. get_order_details is a read-only lookup on the user's own order (#W1845024, listed in their profile's orders array), not a database-modifying action, so it does not require prior listing of action details or explicit 'yes' confirmation. Retrieving order details to answer the user's question is within the policy's scope of 'provide information about their own profile, orders, and related products.'",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    4,
+    5,
+    8
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "figures/teaser.pdf",
+    "pattern": "teaser",
+    "caption_draft": "Every call passes the local policy, yet accepted plans can violate the final-state oracle; replaying identical plans exposes the safeguard gap.",
+    "shows": "The memoryless filter leaves Haiku's 65% residual harm unchanged while the trajectory monitor blocks it."
+  },
+  {
+    "file": "figures/safeguard_comparison.pdf",
+    "pattern": "safeguard_comparison",
+    "caption_draft": "Realized harm after counterfactual replay of identical Haiku plans; intervals resample matched workflow families.",
+    "shows": "The tested stateful references block these constructed harms."
+  },
+  {
+    "file": "figures/model_contract.pdf",
+    "pattern": "model_contract",
+    "caption_draft": "Compositional-plan acceptance across model and contract ablations on the same fixed slice.",
+    "shows": "The Haiku local-contract acceptance pattern recurs, while Sonnet and an explicit trajectory contract reject all harmful plans."
+  },
+  {
+    "file": "figures/factor_diagnostic.pdf",
+    "pattern": "factor_diagnostic",
+    "caption_draft": "Descriptive acceptance rates across paired trajectory attributes in the fixed 20-family slice.",
+    "shows": "Persistent-memory and indirect cases are the largest diagnostic strata; these small cells are descriptive."
+  },
+  {
+    "file": "figures/comparison_matrix.pdf",
+    "pattern": "comparison_matrix",
+    "caption_draft": "Capability comparison against verified 2026 trajectory benchmarks; a question mark marks a feature not established by the abstract, not proof of absence.",
+    "shows": "CompositionalHarmBench is narrower than AgentHazard and combines paired controls, exact oracles, causal replay, and burden measurement."
+  }
+]

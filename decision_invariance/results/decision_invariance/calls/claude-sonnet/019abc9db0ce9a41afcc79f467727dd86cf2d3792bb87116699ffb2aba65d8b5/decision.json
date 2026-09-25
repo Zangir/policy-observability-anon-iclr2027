@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "Order #W9284598 was verified pending. The user was authenticated by email, the agent looked up order status, listed cancellation details (order id and refund method/timeline) with reason 'ordered by mistake' (an accepted reason), and the user explicitly confirmed with 'Yes, please go ahead and cancel the order.' All policy prerequisites for cancel_pending_order are satisfied.",
+  "policy_references": [
+    "An order can only be cancelled if its status is 'pending', and you should check its status before taking the action.",
+    "The user needs to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake') for cancellation.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    13,
+    14
+  ]
+}

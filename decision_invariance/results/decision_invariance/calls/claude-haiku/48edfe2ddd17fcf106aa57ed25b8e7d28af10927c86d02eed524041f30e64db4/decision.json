@@ -1,0 +1,14 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy for 'Modify items' requires that 'each item can be modified to an available new item of the same product but of different product option.' The candidate action passes empty new_item_ids, which violates this requirement\u2014items must be modified to actual new items, not removed entirely. This omits the mandatory procedure of providing replacement items. Additionally, the earlier tool error ('The number of items to be exchanged should match') demonstrates that arrays with mismatched lengths fail validation. No policy provision permits item removal without replacement.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Exchange or modify order tools can only be called once per order. Be sure that all items to be changed are collected into a list before making the tool call!!!",
+    "Modify items: The user must provide a payment method to pay or receive refund of the price difference."
+  ],
+  "message_indices": [
+    8,
+    11,
+    13
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy prohibits calling modify_pending_order_items more than once per order: 'This action can only be called once per order' and 'Exchange or modify order tools can only be called once per order. Be sure that all items to be changed are collected into a list before making the tool call!!!'. The agent already attempted this tool call at message index 15 with identical parameters, resulting in error 'The number of items to be exchanged should match' at message index 16. The current candidate call is a second attempt on the same order, violating the once-per-order constraint. The policy explicitly warns agents to validate and prepare the call correctly before making it to avoid this exact scenario.",
+  "policy_references": [
+    "This action can only be called once, and will change the order status to 'pending (items modifed)'",
+    "Exchange or modify order tools can only be called once per order. Be sure that all items to be changed are collected into a list before making the tool call!!!"
+  ],
+  "message_indices": [
+    15,
+    16
+  ]
+}

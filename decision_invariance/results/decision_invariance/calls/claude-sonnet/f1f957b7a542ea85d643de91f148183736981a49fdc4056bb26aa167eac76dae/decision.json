@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (verified via name+zip, matching user_id confirmed). Policy permits providing 'information about the user's own profile, orders, and related products' once authenticated. The candidate action is a read-only get_order_details call on order #W1845024, which belongs to the authenticated user Noah Patel (it appears in his orders list). No database-modifying action is being taken; this is purely informational to help the user identify which order contains the office/hiking items, which the user explicitly requested.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id."
+  ],
+  "message_indices": [
+    10,
+    11
+  ]
+}

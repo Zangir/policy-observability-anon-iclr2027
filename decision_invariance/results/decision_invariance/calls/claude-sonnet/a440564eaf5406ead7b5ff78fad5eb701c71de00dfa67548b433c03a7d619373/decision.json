@@ -1,0 +1,16 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user was authenticated via email lookup (find_user_id_by_email) and get_user_details confirmed order #W9284598 belongs to this authenticated user (emma_kovacs_9839). The candidate action, get_order_details, is a read-only informational lookup on the user's own order, which the policy explicitly permits ('you can provide the user with information about order, product, profile information'). No database update is being performed, so no confirmation step is required.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code."
+  ],
+  "message_indices": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "model": "claude-sonnet",
+  "n_items": 396,
+  "completed": 350,
+  "failed": 46,
+  "categories": {
+    "valid_decision": 350,
+    "index_out_of_range": 34,
+    "invalid_output": 12
+  },
+  "parse_modes": {
+    "clean": 348,
+    "extracted": 2
+  },
+  "decisions": {
+    "ALLOW": 240,
+    "ASK": 45,
+    "BLOCK": 65
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user has been authenticated via name and zip code (message indices 5-6), and has explicitly requested order details (message index 10). The policy states: 'Once the user has been authenticated, you can provide the user with information about order, product, profile information.' Getting order details for order #W1845024 is an informational action on an order belonging to the authenticated user, and contains no prohibition.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code"
+  ],
+  "message_indices": [
+    5,
+    6,
+    7,
+    10
+  ]
+}

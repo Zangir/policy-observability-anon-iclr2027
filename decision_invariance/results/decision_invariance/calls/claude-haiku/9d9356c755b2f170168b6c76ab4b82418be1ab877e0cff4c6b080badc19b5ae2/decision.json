@@ -1,0 +1,11 @@
+{
+  "decision": "BLOCK",
+  "reason": "The proposed modify_pending_order_items call violates the 'Modify items' policy. The policy explicitly states: 'For a pending order, each item can be modified to an available new item of the same product but of different product option.' Item replacement, not removal, is the permissible action. The candidate call passes three item_ids but an empty new_item_ids array, which contradicts the requirement that each item be 'modified to an available new item.' The tool semantics require new_item_ids to match the count and position of item_ids. Additionally, this call will fail technically for the same reason the previous attempt failed ('The number of items to be exchanged should match'). The user's intent is to remove items entirely, not replace them with variants\u2014a scenario not covered by the 'modify items' section of the policy.",
+  "policy_references": [
+    "Modify items: 'For a pending order, each item can be modified to an available new item of the same product but of different product option.'",
+    "Generic action rules: 'Modify or exchange order tools can only be called once per order.'"
+  ],
+  "message_indices": [
+    10
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating the user by locating their user id via email before providing any account, order, or payment information. The user has provided their email address, and the candidate action calls find_user_id_by_email with exactly that email. This is the mandated first step and involves no database modification, so no confirmation is required.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id."
+  ],
+  "message_indices": [
+    3
+  ]
+}

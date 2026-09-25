@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The candidate call passes item_ids=[three items] but new_item_ids=[] (empty). Policy for modify_pending_order_items requires each item being modified to map to a new available item of the same product type but different option \u2014 it is a swap tool, not a removal/partial-cancellation tool. The user's actual request is to remove three items from the order and get a refund for just those items while keeping the rest of the order pending, which is not an action the policy or any tool supports: cancellation only applies to an entire pending order, and item modification requires a same-product replacement item for each item_id, not an empty new_item_ids list. Calling modify_pending_order_items with no replacement items would incorrectly strip items without the required new-item mapping, and there is no policy-sanctioned mechanism to partially remove items from a pending order while leaving it active. The agent should have informed the user that partial removal isn't supported and offered only valid options (full order cancellation, or item modification to different options of the same product).",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "This action can only be called once, and will change the order status to 'pending (items modifed)'.",
+    "Generally, you can only take action on pending or delivered orders."
+  ],
+  "message_indices": [
+    15,
+    16
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The candidate performs the required identity lookup using the name and ZIP code supplied by the user. The user states there is no email associated with the account, supporting use of the alternative lookup. This is a single read-only authentication call and requires no database-update confirmation.",
+  "policy_references": [
+    "At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code.",
+    "find_user_id_by_name_zip"
+  ],
+  "message_indices": [
+    4,
+    5,
+    6
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The candidate call omits the office chair item id (8323284863) from item_ids \u2014 only the keyboard (1340995114) and headphones (7493556126) are included. This mismatches the explicitly confirmed action, which listed all three items (keyboard, headphones, office chair) to be removed with total refund $1,093.34. Since modify_pending_order_items can only be called once per order and is irreversible (order becomes 'pending (items modified)', unmodifiable/uncancellable afterward), executing this incomplete payload would incorrectly leave the office chair in the order while charging/refunding as if it were removed, contrary to user confirmation and policy's requirement to collect all items to be changed into the list before the single allowed call.",
+  "policy_references": [
+    "Exchange or modify order tools can only be called once per order. Be sure that all items to be changed are collected into a list before making the tool call!!!",
+    "This action can only be called once, and will change the order status to 'pending (items modifed)'. The agent will not be able to modify or cancel the order anymore.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    15,
+    16
+  ]
+}

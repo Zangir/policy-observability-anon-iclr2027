@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been properly authenticated via email (emma.kovacs2974@example.com), with user ID emma_kovacs_9839 confirmed. The order #W9284598 is confirmed to be in the authenticated user's order list. The policy permits providing information about a user's own orders after authentication. This is a read-only information retrieval request with no database modification, so explicit user confirmation is not required.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    3,
+    4,
+    5
+  ]
+}

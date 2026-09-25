@@ -1,0 +1,11 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user is authenticated and requesting information about the digital camera they ordered. The policy explicitly permits providing 'information about their own profile, orders, and related products.' Calling get_product_details with the camera's product ID is a read-only information retrieval operation that falls within scope and requires no user confirmation.",
+  "policy_references": [
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    10
+  ]
+}

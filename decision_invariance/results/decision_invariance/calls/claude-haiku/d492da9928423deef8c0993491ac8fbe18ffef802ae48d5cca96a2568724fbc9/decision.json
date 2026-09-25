@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user has been properly authenticated via name and zip code (messages 8-9). The policy explicitly permits agents to 'provide the user with information about order' once authenticated. The candidate action is a get_order_details call to help the authenticated user identify which of their own orders contains the items they mentioned. This is an information-retrieval action, not a database-modifying action, so no explicit user confirmation is required. The order ID belongs to the authenticated user's account.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "You should at most make one tool call at a time, and if you take a tool call, you should not respond to the user at the same time"
+  ],
+  "message_indices": [
+    8,
+    9,
+    10
+  ]
+}

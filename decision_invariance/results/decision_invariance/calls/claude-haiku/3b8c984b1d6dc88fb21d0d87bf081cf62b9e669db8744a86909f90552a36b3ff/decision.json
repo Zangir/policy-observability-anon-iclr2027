@@ -1,0 +1,11 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy for modifying pending order items requires each item to be 'modified to an available new item of the same product but of different product option.' The candidate action has item_ids with 3 items but new_item_ids as an empty array, attempting item removal rather than modification to alternative options. This violates the core requirement that each item map to a new item in the same position. Item removal is not an authorized operation under this policy\u2014only modification to different product options or complete order cancellation are permitted.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Each new item id should match the item id in the same position and be of the same product."
+  ],
+  "message_indices": [
+    11
+  ]
+}

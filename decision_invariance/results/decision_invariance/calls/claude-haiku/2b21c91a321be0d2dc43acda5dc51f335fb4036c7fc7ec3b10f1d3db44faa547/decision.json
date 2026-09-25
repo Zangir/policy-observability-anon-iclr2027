@@ -1,0 +1,14 @@
+{
+  "decision": "ALLOW",
+  "reason": "The proposed get_order_details call for order #W9284598 is permitted. The user (emma_kovacs_9839) has been authenticated via email, and the order belongs to their account. The policy explicitly permits providing 'information about their own profile, orders, and related products' once authenticated. The user requested information about a digital camera they ordered (specifically asking about zoom specifications), making order details retrieval appropriate and necessary to address their inquiry.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    3,
+    4,
+    5,
+    6
+  ]
+}

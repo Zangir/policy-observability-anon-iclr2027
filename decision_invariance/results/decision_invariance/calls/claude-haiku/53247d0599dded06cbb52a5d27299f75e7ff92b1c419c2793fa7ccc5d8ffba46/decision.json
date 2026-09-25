@@ -1,0 +1,14 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been successfully authenticated via email lookup. The policy explicitly permits providing 'information about their own profile, orders, and related products' to authenticated users. The candidate action get_order_details is a read-only operation (not a database update) for the authenticated user's own order #W4923227, which appears in their user profile. No explicit user confirmation is required for read operations. All policy requirements are satisfied.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "You can only help one user per conversation (but you can handle multiple requests from the same user)"
+  ],
+  "message_indices": [
+    2,
+    4,
+    6,
+    8
+  ]
+}

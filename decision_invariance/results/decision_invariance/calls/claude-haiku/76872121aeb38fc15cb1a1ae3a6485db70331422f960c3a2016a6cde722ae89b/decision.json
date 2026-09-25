@@ -1,0 +1,12 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy defines 'Modify items' as changing items to 'an available new item of the same product but of different product option.' The candidate call passes empty new_item_ids, representing removal rather than modification to an alternative variant. The policy explicitly requires modification TO an available new item; removal of items without replacement is not authorized under the 'Modify items' provisions. The policy does support cancellation of entire orders (via cancel_pending_order with a specific reason), but not selective item removal from a pending order via the modify operation.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else."
+  ],
+  "message_indices": [
+    8,
+    9
+  ]
+}

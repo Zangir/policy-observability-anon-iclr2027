@@ -1,0 +1,14 @@
+{
+  "decision": "BLOCK",
+  "reason": "The candidate action calls modify_pending_order_items with 3 item_ids but an empty new_item_ids array. The policy's 'Modify items' action only permits changing an item to a different option of the same product type ('each item can be modified to an available new item of the same product but of different product option'), with new_item_ids matching item_ids position-for-position. There is no policy-supported action for removing specific items from a pending order while keeping other items \u2014 'cancel pending order' only cancels the entire order, and 'modify items' requires a same-type replacement, not removal. The conversation's plan (cancel just the office items, keep the hiking boots and helmet) has no valid tool mapping; using modify_pending_order_items with empty new_item_ids is not an authorized use of that tool and does not correspond to any policy-defined action.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Each new item id should match the item id in the same position and be of the same product.",
+    "An order can only be cancelled if its status is 'pending'... After user confirmation, the order status will be changed to 'cancelled'"
+  ],
+  "message_indices": [
+    15,
+    16,
+    17
+  ]
+}

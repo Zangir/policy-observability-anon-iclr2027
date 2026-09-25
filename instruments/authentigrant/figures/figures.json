@@ -1,0 +1,26 @@
+[
+  {
+    "file": "figures/teaser.pdf",
+    "pattern": "teaser",
+    "caption_draft": "A matched authority case, the executable factorization, and the primary unsafe-execution rate.",
+    "shows": "The model can execute despite failed genuine authority even when request rhetoric is untrusted."
+  },
+  {
+    "file": "figures/factor_effects.pdf",
+    "pattern": "factor_effects",
+    "caption_draft": "Execution contrasts for three genuine authority signals and two cosmetic cues; bars show task-clustered 95% intervals.",
+    "shows": "Models respond incompletely to genuine authority evidence while cosmetic effects are near zero."
+  },
+  {
+    "file": "figures/model_comparison.pdf",
+    "pattern": "model_comparison",
+    "caption_draft": "Unsafe proposals on the same five tasks for Haiku primary, an independent Haiku resample, and Sonnet; intervals cluster by task.",
+    "shows": "The failure replicates for Haiku but is much smaller for Sonnet."
+  },
+  {
+    "file": "figures/task_diagnostic.pdf",
+    "pattern": "task_diagnostic",
+    "caption_draft": "Unsafe-proposal rates by base task in the primary grid; each task contributes 28 unauthorized cells.",
+    "shows": "Rates differ across tasks whose domains and evidence patterns are confounded."
+  }
+]

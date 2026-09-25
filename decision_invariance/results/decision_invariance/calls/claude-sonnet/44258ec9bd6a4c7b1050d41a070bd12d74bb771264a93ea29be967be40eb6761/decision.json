@@ -1,0 +1,13 @@
+{
+  "decision": "BLOCK",
+  "reason": "The policy's modify_pending_order_items action only supports changing an item to a different option of the same product type ('each item can be modified to an available new item of the same product but of different product option'), with new_item_ids required to match item_ids position-by-position for the same product. There is no policy provision for deleting items outright from a multi-item pending order while keeping others; cancellation only applies to an entire order. The candidate call passes new_item_ids=[] (empty) against item_ids=[3 items], which is not a same-product option swap but an outright removal/partial-refund action that the tool and policy do not support. No policy section authorizes partial item removal with refund from a pending order.",
+  "policy_references": [
+    "For a pending order, each item can be modified to an available new item of the same product but of different product option.",
+    "Each new item id should match the item id in the same position and be of the same product.",
+    "Generally, you can only take action on pending or delivered orders."
+  ],
+  "message_indices": [
+    15,
+    16
+  ]
+}

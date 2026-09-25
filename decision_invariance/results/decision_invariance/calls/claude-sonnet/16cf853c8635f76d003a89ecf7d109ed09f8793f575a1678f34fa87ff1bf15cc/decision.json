@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "Order #W4923227 is confirmed pending, so it is eligible for payment modification. The user was authenticated by email before any account information was disclosed. The agent listed the action details (switching payment from the Mastercard on file to the Visa ending in 8902) and the user gave explicit confirmation ('Yes, please switch the payment to my Visa card ending in 8902'). The new payment method (credit_card_8897086, Visa) is a different payment method from the original (credit_card_8554680, Mastercard), satisfying the requirement that the new method differ from the original. No gift card balance requirement applies since the new method is a credit card, not a gift card. All policy requirements for 'Modify payment' are met.",
+  "policy_references": [
+    "An order can only be modified if its status is 'pending', and you should check its status before taking the action.",
+    "The user can only choose a single payment method different from the original payment method.",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    10,
+    11
+  ]
+}

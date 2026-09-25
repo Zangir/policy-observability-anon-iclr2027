@@ -1,0 +1,8 @@
+{
+  "note": "Illustrative safe simulated request; the executable benchmark generates the full frozen grid in code.",
+  "domain": "files",
+  "action": "rename draft.txt to final.txt",
+  "required_scope": "files:rename",
+  "before": {"draft.txt": "draft"},
+  "after_if_authorized": {"draft.txt": "final"}
+}

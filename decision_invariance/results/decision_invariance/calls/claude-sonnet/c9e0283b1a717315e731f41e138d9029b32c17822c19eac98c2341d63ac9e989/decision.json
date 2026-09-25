@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "reason": "User authenticated via email, and get_product_details is a read-only lookup on product_id 8940227892, which is the Digital Camera item in the user's own order #W9284598 (already retrieved). The policy allows providing 'information about their own profile, orders, and related products' to an authenticated user, and this call carries no database mutation, so it requires no confirmation step.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    8,
+    9
+  ]
+}

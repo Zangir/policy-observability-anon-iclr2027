@@ -1,0 +1,31 @@
+{
+  "matrix": {
+    "rows": ["AuthorityBench", "ST-WebAgentBench", "tau2-bench retail", "ToolEmu (control)"],
+    "cols": ["R1-A rendered", "R1-B sufficient", "R2 contract", "A1 acted"],
+    "cells": [
+      ["partial", "no", "no", "no"],
+      ["yes", "no", "no", "partial"],
+      ["yes", "partial", "no", "yes"],
+      ["n/a", "n/a", "partial", "n/a"]
+    ],
+    "quant_col": ["n/a", 2281, 1, "by design"],
+    "quant_label": "conditions scored but absent"
+  },
+  "authentigrant": {
+    "labels": ["Haiku", "Haiku\n(resample)", "Sonnet", "Haiku\n(ledger)", "Det. gate"],
+    "unsafe_pct": [14.3, 7.1, 0.7, 0.0, 0.0],
+    "err_lo": [6.4, 0.0, 0.0, 0.0, 0.0],
+    "err_hi": [7.1, 0.0, 0.0, 0.0, 0.0]
+  },
+  "composition": {
+    "labels": ["No monitor", "Memoryless\nfilter", "Trajectory\nmonitor"],
+    "harm_pct": [65.0, 65.0, 0.0],
+    "clean_pct": [85.0, 85.0, 85.0]
+  },
+  "invariance": {
+    "contrasts": ["K-C\n(candidate-first\nvs canonical)", "R-C\n(original\nvs canonical)"],
+    "cross": [0.0288, 0.0204],
+    "within": [0.0288, 0.0204],
+    "excess": [0.0, 0.0]
+  }
+}

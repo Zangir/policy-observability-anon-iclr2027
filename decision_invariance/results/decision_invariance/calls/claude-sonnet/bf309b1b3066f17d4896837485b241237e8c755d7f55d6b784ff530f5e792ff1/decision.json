@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "Policy requires authenticating the user via email or name+zip before proceeding. The user could not recall their email and provided first name, last name, and zip code as the alternative authentication path explicitly permitted by policy. The candidate action is a read-only lookup tool matching exactly what the user supplied, used for the stated authentication purpose, and does not modify any database record, so no explicit confirmation step is required.",
+  "policy_references": [
+    "you have to authenticate the user identity by locating their user id via email, or via name + zip code",
+    "find user id by first name, last name, and zip code"
+  ],
+  "message_indices": [
+    3,
+    4,
+    5
+  ]
+}

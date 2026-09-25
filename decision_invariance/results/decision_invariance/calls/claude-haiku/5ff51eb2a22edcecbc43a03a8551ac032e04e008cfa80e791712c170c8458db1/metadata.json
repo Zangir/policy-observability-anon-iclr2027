@@ -1,0 +1,22 @@
+{
+  "item_id": "5ff51eb2a22edcecbc43a03a8551ac032e04e008cfa80e791712c170c8458db1",
+  "packet_id": "83833bc582b733470254e2ff89c9b319",
+  "model": "claude-haiku",
+  "rendering_sha256": "4a3c9d66725b0af6da5bd7f4aade11e34076aa58aace2d4ce68b03e164a0198c",
+  "rendering_arms": [
+    "C"
+  ],
+  "repetition": 1,
+  "source_task": "33",
+  "action_effect": "read",
+  "tool_name": "get_order_details",
+  "prompt_sha256": "877979dc7d2ba58710c086f9383800d54c3943eb825eb84b549a4c4a0c7f2466",
+  "prompt_bytes": 30306,
+  "started_utc": "2026-09-25T19:00:26.674196+00:00",
+  "transport": "macos_native_claude_cli",
+  "exit_status": 0,
+  "status": "failed",
+  "category": "index_out_of_range",
+  "elapsed_seconds": 17.57838166691363,
+  "finished_utc": "2026-09-25T19:00:44.252678+00:00"
+}

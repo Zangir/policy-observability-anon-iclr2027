@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "The policy explicitly permits agents to 'modify their default user address'. The user was properly authenticated via name+zip lookup (user_id: noah_patel_6952). The agent listed action details and obtained explicit user confirmation ('Yes, please go ahead...') before the tool call, as required. All mandatory parameters (user_id, address1-2, city, state, country, zip) are provided. The action targets only the authenticated user's own profile.",
+  "policy_references": [
+    "As a retail agent, you can help users... **modify their default user address**",
+    "Before taking any action that updates the database (cancel, modify, return, exchange), you must list the action details and obtain explicit user confirmation (yes) to proceed."
+  ],
+  "message_indices": [
+    20,
+    21,
+    22
+  ]
+}

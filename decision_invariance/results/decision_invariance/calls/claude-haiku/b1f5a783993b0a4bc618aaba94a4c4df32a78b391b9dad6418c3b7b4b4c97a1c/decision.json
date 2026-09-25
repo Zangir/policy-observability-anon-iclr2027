@@ -1,0 +1,15 @@
+{
+  "decision": "ALLOW",
+  "reason": "The user has been authenticated via email lookup (indices 5-8), and the candidate action retrieves order details for the authenticated user's own order to answer their informational query about camera specifications. The policy explicitly permits: 'provide information about their own profile, orders, and related products' once authenticated. This is an informational lookup, not a database-modifying action, so no user confirmation is required.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    5,
+    6,
+    7,
+    8
+  ]
+}

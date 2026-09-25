@@ -1,0 +1,13 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (found via email lookup). Retrieving get_user_details for the same authenticated user is a read-only information lookup about their own profile/orders, explicitly permitted by policy ('provide information about their own profile, orders, and related products') and does not update the database, so no confirmation is required before this call.",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "decision": "ALLOW",
+  "reason": "User is authenticated (found via email, matches account) and is asking about their own order (#W4923227, the only order listed on their profile). The candidate action, get_order_details, is a read-only information lookup needed to answer the user's questions about which payment method was used and whether the payment can be changed. It updates nothing in the database, so no confirmation is required at this step, and it is within the scope of providing 'information about their own profile, orders, and related products.'",
+  "policy_references": [
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.",
+    "provide information about their own profile, orders, and related products"
+  ],
+  "message_indices": [
+    2,
+    4,
+    6,
+    8
+  ]
+}

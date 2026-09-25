@@ -1,0 +1,17 @@
+{
+  "decision": "ALLOW",
+  "reason": "User has been authenticated as emma_kovacs_9839 via email. The product (ID 8940227892) is present in the user's pending order #W9284598. The policy explicitly permits providing \"information about their own profile, orders, and related products\" to authenticated users, and states \"you can provide the user with information about order, product, profile information.\" Retrieving details about a product already in the user's order falls within this authorized scope.",
+  "policy_references": [
+    "provide information about their own profile, orders, and related products",
+    "Once the user has been authenticated, you can provide the user with information about order, product, profile information"
+  ],
+  "message_indices": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}
